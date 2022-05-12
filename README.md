@@ -10,13 +10,13 @@ A simple python serverless lambda function which would terminate all EC2 instanc
 
 ### Deployment Steps:
 - Create a lambda function terminate-untagged-instances
-![Lambda function setup](images/lambda_function.jpg)
+![Lambda function setup](images/lambda_function.png)
 
 #### Configuration
 - Go to Configuration > General Configuration > Increase timeout to 1 min.
 - Go to Configuration > Permissions > Execution Role
     - Add below policies to the role
-    ![Role setup](images/role.jpg)
+    ![Role setup](images/role.png)
 
 - Create a dynamoDB table terminate-untagged-instances with partition key - instanceId (String) 
 - Create a EventBridge rule to schedule the lambda function every 1 hour.
