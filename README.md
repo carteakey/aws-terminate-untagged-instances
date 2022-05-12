@@ -11,6 +11,7 @@ A simple python serverless lambda function which would terminate all EC2 instanc
 ### Deployment Steps:
 - Create a lambda function terminate-untagged-instances
 ![Lambda function setup](images/lambda_function.png)
+- Upload both .py files in the function
 
 #### Configuration
 - Go to Configuration > General Configuration > Increase timeout to 1 min.
